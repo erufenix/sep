@@ -19,43 +19,25 @@
 		<meta property="og:url" content="">
 		<meta property="og:image" content="">
 
-		<!-- Icons -->
-		<!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-		<link rel="shortcut icon" href="{{ asset('assets')}}/codebase/media/favicons/favicon.png"> <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets')}}/codebase/media/favicons/favicon-192x192.png">
+		<link rel="shortcut icon" href="{{ asset('assets')}}/codebase/media/favicons/favicon.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets')}}/codebase/media/favicons/favicon-192x192.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets')}}/codebase/media/favicons/apple-touch-icon-180x180.png">
-		<!-- END Icons -->
-
-		<!-- Stylesheets -->
-
-		<!-- Fonts and Codebase framework -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap"> <link rel="stylesheet" id="css-main" href="{{ asset('assets')}}/codebase/css/codebase.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
+		<link rel="stylesheet" id="css-main" href="{{ asset('assets')}}/codebase/css/codebase.min.css">
 
 		<!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
 		<!-- <link rel="stylesheet" id="css-theme" href="{{ asset('assets')}}/codebase/css/themes/flat.min.css"> -->
-	<link
-		rel="stylesheet" id="css-theme" href="{{ asset('assets')}}/codebase/css/themes/corporate.min.css"> <!-- END Stylesheets -->
+		<link rel="stylesheet" id="css-theme" href="{{ asset('assets')}}/codebase/css/themes/corporate.min.css">
 	</head>
 	<body>
-
-		<div
-			id="page-container" class="sidebar-inverse side-scroll page-header-fixed page-header-glass page-header-inverse main-content-boxed">
-
-			<!-- Sidebar -->
-			<nav
-				id="sidebar">
-				<!-- Sidebar Content -->
-				<div
-					class="sidebar-content">
-					<!-- Side Header -->
+		<div id="page-container" class="sidebar-inverse side-scroll page-header-fixed page-header-glass page-header-inverse main-content-boxed">
+			<nav id="sidebar">
+				<div class="sidebar-content">
 					<div class="content-header content-header-fullrow bg-black-op-10">
 						<div class="content-header-section text-center align-parent">
-							<!-- Close Sidebar, Visible only on mobile screens -->
-							<!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-								<button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close"> <i class="fa fa-times text-danger"></i>
+							<button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+								<i class="fa fa-times text-danger"></i>
 							</button>
-							<!-- END Close Sidebar -->
-
-							<!-- Logo -->
 							<div class="content-header-item">
 								<a class="link-effect font-w700" href="index.html">
 									<i class="si si-fire text-primary"></i>
@@ -63,19 +45,9 @@
 									<span class="font-size-xl text-primary">base</span>
 								</a>
 							</div>
-							<!-- END Logo -->
 						</div>
 					</div>
-					<!-- END Side Header -->
-
-					<!-- Side Main Navigation -->
-					<div
-						class="content-side content-side-full">
-						<!--
-						                        Mobile navigation, desktop navigation can be found in #page-header
-						
-						                        If you would like to use the same navigation in both mobiles and desktops, you can use exactly the same markup inside sidebar and header navigation ul lists
-						                        -->
+					<div class="content-side content-side-full">
 						<ul class="nav-main">
 							<li>
 								<a class="active" href="db_corporate.html">
@@ -83,77 +55,42 @@
 							</li>
 						</ul>
 					</div>
-					<!-- END Side Main Navigation -->
 				</div>
-				<!-- Sidebar Content -->
 			</nav>
-			<!-- END Sidebar -->
-
-			<!-- Header -->
-			<header
-				id="page-header">
-				<!-- Header Content -->
-				<div
-					class="content-header">
-					<!-- Left Section -->
-					<div
-						class="content-header-section">
-						<!-- Logo -->
+			<header id="page-header">
+				<div class="content-header">
+					<div class="content-header-section">
 						<div class="content-header-item mr-5">
 							<a class="link-effect font-w600" href="javascript:;">
 								<span class="text-dual-primary-dark">code</span>
 								<span class="text-primary">base</span>
 							</a>
 						</div>
-						<!-- END Logo -->
-
-						<!-- Open Search Section -->
-						<!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-							<button type="button" class="btn btn-rounded btn-dual-secondary" data-toggle="layout" data-action="header_search_on"> <i class="fa fa-search mr-5"></i>
-							Buscar
+						<button type="button" class="btn btn-rounded btn-dual-secondary" data-toggle="layout" data-action="header_search_on">
+							<i class="fa fa-search mr-5"></i> Buscar
 						</button>
-						<!-- END Open Search Section -->
 					</div>
-					<!-- END Left Section -->
-
-					<!-- Right Section -->
 					<div class="content-header-section">
-						<!-- Header Navigation -->
-						<!--
-						                        Desktop Navigation, mobile navigation can be found in #sidebar
-						
-						                        If you would like to use the same navigation in both mobiles and desktops, you can use exactly the same markup inside sidebar and header navigation ul lists
-						                        If your sidebar menu includes headings, they won't be visible in your header navigation by default
-						                        If your sidebar menu includes icons and you would like to hide them, you can add the class 'nav-main-header-no-icons'
-						                        -->
-							<ul class="nav-main-header"> <li>
+						<ul class="nav-main-header">
+							<li>
 								<a class="active" href="javascript:;">
-									<i class="si si-rocket"></i>Panel</a>
+									<i class="si si-rocket"></i>Panel
+								</a>
 							</li>
 						</ul>
-						<!-- END Header Navigation -->
-
-						<!-- Toggle Sidebar -->
-						<!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-							<button type="button" class="btn btn-circle btn-dual-secondary d-lg-none" data-toggle="layout" data-action="sidebar_toggle"> <i class="fa fa-navicon"></i>
+						<button type="button" class="btn btn-circle btn-dual-secondary d-lg-none" data-toggle="layout" data-action="sidebar_toggle">
+							<i class="fa fa-navicon"></i>
 						</button>
-						<!-- END Toggle Sidebar -->
 					</div>
-					<!-- END Right Section -->
 				</div>
-				<!-- END Header Content -->
-
-				<!-- Header Search -->
 				<div id="page-header-search" class="overlay-header">
 					<div class="content-header content-header-fullrow">
 						<form>
 							<div class="input-group">
 								<div class="input-group-prepend">
-									<!-- Close Search Section -->
-									<!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-										<button type="button" class="btn btn-secondary px-15" data-toggle="layout" data-action="header_search_off"> <i class="fa fa-times"></i>
+									<button type="button" class="btn btn-secondary px-15" data-toggle="layout" data-action="header_search_off">
+										<i class="fa fa-times"></i>
 									</button>
-									<!-- END Close Search Section -->
 								</div>
 								<input type="text" class="form-control" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
 								<div class="input-group-append">
@@ -165,9 +102,6 @@
 						</form>
 					</div>
 				</div>
-				<!-- END Header Search -->
-
-				<!-- Header Loader -->
 				<div id="page-header-loader" class="overlay-header bg-primary">
 					<div class="content-header content-header-fullrow text-center">
 						<div class="content-header-item">
@@ -175,74 +109,27 @@
 						</div>
 					</div>
 				</div>
-				<!-- END Header Loader -->
 			</header>
-			<!-- END Header -->
-
-			<!-- Main Container -->
-			<main
-				id="main-container">
-
-				<!-- Header -->
+			<main id="main-container">
 				<div class="bg-primary-dark">
 					<div class="content content-top">
 						<div class="row push">
 							<div class="col-md py-10 d-md-flex align-items-md-center text-center">
 								<h1 class="text-white mb-0">
-									<span class="font-w300">Checkin</span>
+									<span class="font-w300">{{ app_name }}</span>
 									<span class="font-w400 font-size-lg text-white-op d-none d-md-inline-block"></span>
 								</h1>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- END Header -->
-
-				<!-- Page Content -->
-				<div
-					class="bg-white">
-
-					<!-- Content -->
-					<div
-						class="content">
-						<!-- Icon Navigation -->
-						<div class="row gutters-tiny push">
-							<div class="col-6 col-md-4 col-xl-2">
-								<a class="block block-rounded block-bordered block-link-shadow text-center" href="javascript:void(0)">
-									<div class="block-content">
-										<p class="mt-5">
-											<i class="si si-clock fa-3x text-muted"></i>
-										</p>
-										<p class="font-w600">&nbsp;</p>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-6 col-xl-3">
-								<a class="block block-rounded block-bordered" href="javascript:void(0)">
-									<div class="block-content p-5">
-                    <div class="form-material form-material-lg floating">
-                      <input type="text" class="form-control form-control-lg" id="in" name="material-input-size-lg2">
-                      <label for="in">Entrada</label>
-                    </div>
-										<div class="py-30 text-center bg-body-light rounded">
-											<div class="font-size-h2 font-w700 mb-0 text-muted">00:00:00</div>
-											<div class="font-size-sm font-w600 text-uppercase">&nbsp;</div>
-										</div>
-									</div>
-								</a>
-							</div>              
-						</div>
-						<!-- END Icon Navigation -->
-
+				<div class="bg-white">
+					<div class="content">
+					{% block content %}{% endblock %}
 					</div>
-					<!-- END Content -->
 				</div>
-				<!-- END Page Content -->
-
 			</main>
-			<!-- END Main Container -->
 
-			<!-- Footer -->
 			<footer id="page-footer" class="bg-white opacity-0">
 				<div class="content py-20 font-size-sm clearfix">
 					<div class="float-right">
@@ -258,41 +145,10 @@
 					</div>
 				</div>
 			</footer>
-			<!-- END Footer -->
-		</div>
-		<!-- END Page Container -->
-
-		<!--
-		            Codebase JS Core
-		
-		            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
-		            to handle those dependencies through webpack. Please check out {{ asset('assets')}}/codebase/_es6/main/bootstrap.js for more info.
-		
-		            If you like, you could also include them separately directly from the {{ asset('assets')}}/codebase/js/core folder in the following
-		            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
-		
-		            {{ asset('assets')}}/codebase/js/core/jquery.min.js
-		            {{ asset('assets')}}/codebase/js/core/bootstrap.bundle.min.js
-		            {{ asset('assets')}}/codebase/js/core/simplebar.min.js
-		            {{ asset('assets')}}/codebase/js/core/jquery-scrollLock.min.js
-		            {{ asset('assets')}}/codebase/js/core/jquery.appear.min.js
-		            {{ asset('assets')}}/codebase/js/core/jquery.countTo.min.js
-		            {{ asset('assets')}}/codebase/js/core/js.cookie.min.js
-		        -->
-		<script src="{{ asset('assets')}}/codebase/js/codebase.core.min.js"></script>
-
-		<!--
-		            Codebase JS
-		
-		            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
-		            webpack is putting everything together at {{ asset('assets')}}/codebase/_es6/main/app.js
-		        -->
-		<script src="{{ asset('assets')}}/codebase/js/codebase.app.min.js"></script>
-
-		<!-- Page JS Plugins -->
-		<script src="{{ asset('assets')}}/codebase/js/plugins/chartjs/Chart.bundle.min.js"></script>
-
-		<!-- Page JS Code -->
-		<script src="{{ asset('assets')}}/codebase/js/pages/db_corporate.min.js"></script>
-	</body>
-</html>
+			</div>
+			<script src="{{ asset('assets')}}/codebase/js/codebase.core.min.js"></script>
+			<script src="{{ asset('assets')}}/codebase/js/codebase.app.min.js"></script>
+			<script src="{{ asset('assets')}}/codebase/js/plugins/chartjs/Chart.bundle.min.js"></script>
+			<script src="{{ asset('assets')}}/codebase/js/pages/db_corporate.min.js"></script>
+		</body>
+	</html>

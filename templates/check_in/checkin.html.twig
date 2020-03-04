@@ -1,1 +1,29 @@
 {% extends 'layouts/base.html.twig' %}
+{% block content %}
+<div class="row gutters-tiny push">
+	<div class="col-6 col-md-4 col-xl-2">
+		<a class="block block-rounded block-bordered block-link-shadow text-center" href="javascript:void(0)">
+			<div class="block-content">
+				<p class="mt-5">
+					<i class="si si-clock fa-3x text-muted"></i>
+				</p>
+				<p class="font-w600">&nbsp;</p>
+			</div>
+		</a>
+	</div>
+	<div class="col-md-6 col-xl-3">
+		<a class="block block-rounded block-bordered" href="javascript:void(0)">
+			<div class="block-content p-5">
+				<div class="form-material form-material-lg floating">
+					<input type="text" class="form-control form-control-lg" id="in" name="material-input-size-lg2">
+					<label for="in">Entrada</label>
+				</div>
+				<div class="py-30 text-center bg-body-light rounded">
+					<div class="font-size-h2 font-w700 mb-0 text-muted">00:00:00</div>
+					<div class="font-size-sm font-w600 text-uppercase">&nbsp;</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+{% endblock %}

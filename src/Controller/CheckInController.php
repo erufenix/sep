@@ -13,7 +13,8 @@ class CheckInController extends AbstractController
     public function index()
     {
         return $this->render('check_in/checkin.html.twig', [
-            'controller_name' => 'CheckInController',
+            'controller_name'   => 'CheckInController',
+            'app_name'          => 'Checkin'
         ]);
     }
 }
